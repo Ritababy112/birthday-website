@@ -1,0 +1,10 @@
+.surprise {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff9a9e;
+  text-align: center;
+  color: white;
+}

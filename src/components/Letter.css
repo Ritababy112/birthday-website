@@ -1,0 +1,94 @@
+
+/* PAGE BACKGROUND */
+.letter-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background: linear-gradient(135deg, #0d0330, #fad0c4);
+  padding: 20px;
+}
+
+/* GLASS LETTER */
+.letter-box {
+  width: 95%;
+  max-width: 600px;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 40px rgba(255, 75, 125, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.letter-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* TEXT CONTAINER */
+.text-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* TYPING TEXT */
+.typing-text {
+  line-height: 1.7;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+/* BLINKING CURSOR */
+.cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 1s infinite;
+  color: #ff4b7d;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* SCROLLBAR */
+.text-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.text-container::-webkit-scrollbar-thumb {
+  background: #ff4b7d;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.letter-box button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff4b7d, #ff758c);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.letter-box button:hover {
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .letter-box {
+    height: 85vh;
+  }
+
+  .typing-text {
+    font-size: 13px;
+  }
+}
