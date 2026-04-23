@@ -4,7 +4,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ff9a9e;
+    background: linear-gradient(135deg, #0d0330, #fad0c4);
   text-align: center;
   color: white;
+}
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #0c0227;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
 }

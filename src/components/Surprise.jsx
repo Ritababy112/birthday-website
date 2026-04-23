@@ -23,7 +23,7 @@ export default function Surprise({ goToHome }) {
         Thank you for being my safe space, always. It may just be a small cake for now, but it comes with so much love until the day I can give you something even bigger. Have the most beautiful birthday.
       </p>
 
-      <button className="home-btn" onClick={goToHome}>
+      <button className="btn" onClick={goToHome}>
         Back to Home 🏠
       </button>
     </motion.div>

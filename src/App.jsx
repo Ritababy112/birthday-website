@@ -23,9 +23,8 @@ function App() {
         <Memories key="memories" goToSurprise={() => setPage("surprise")} />
       )}
 
-      {page === "surprise" && (
-        <Surprise key="surprise" />
-      )}
+    
+      {page === "surprise" && <Surprise goToHome={() => setPage("home")} />}
     </AnimatePresence>
   );
 }
